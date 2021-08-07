@@ -1,0 +1,59 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#md_container {
+    background-color: #333;
+    margin: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: system-ui;
+    padding: 10px;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#e_selector_container {
+    background-color: #eee;
+    float: left;
+    height: 100%;
+    width: 300px;
+    color: #0b0b0b;
+    font-weight: 500;
+    font-family: system-ui;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#e_selector_container ol {
+    width: 100%;
+    list-style-position: inside;
+    padding: 0px;
+    margin: 0;
+}
+
+#e_selector_container span {
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+
+#e_selector_container ol li {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(94, 161, 94);
+    font-size: 18px;
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+#e_selector_container ol li a {
+    color: rgb(94, 161, 94);
+}

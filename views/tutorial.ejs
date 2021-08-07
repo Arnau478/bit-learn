@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('metadata') %>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/md.css">
+    <link rel="stylesheet" href="/public/css/atom-one-dark.css">
+    <title>Bit-Learn Tutorial</title>
+</head>
+<body>
+    <div id="e_selector_container">
+        <span><%= language %> tutorial</span>
+        <ol>
+            <% for(var i = 0; i < tutorial_episodes.length; i++){ %>
+                <li><a href="/tutorial/<%= language %>/e<%= (i+1) %>"><%= tutorial_episodes[i] %></a></li>
+            <% } %>
+        </ol>
+    </div>
+    <div id="md_container">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+        var md_content = `<%= md_content %>`;
+        hljs.highlightAll();
+        document.getElementById('md_container').innerHTML = marked(md_content);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+
+#md_container h1 {
+    border-bottom: solid 3px whitesmoke;
+    padding: 5px;
+}
+
+#md_container h2 {
+    border-bottom: solid 1px #aaa;
+}
+
+#md_container p code {
+    background-color: #555;
+    padding: 3px;
+    border-radius: 3px;
+    color: rgb(141, 209, 141)
+}
+
+#md_container pre code {
+    background-color: #555;
+    padding: 3px;
+    border-radius: 3px;
+    display: block;
+}
